@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-.card-content{
+.container{
     display: flex;
     min-height: 100vh;
     align-items: center;
@@ -13,7 +13,7 @@
 
 }
 
-.qrcode-container{
+.card{
     display: flex;
     flex-basis: 300px;
     height: 480px;
@@ -23,13 +23,14 @@
 
 }
 
-.qrcode{
+.card__image{
     height: 260px;
     border-radius: 20px;
     margin-top: 18px;
+    
 }
 
-.text-content{
+.card__text{
     margin-top: 10px;
     width: 260px;
     height: 150px;
@@ -63,7 +64,7 @@ footer{
 }
 
 @media (max-width: 375px){
-    .qrcode-container{
+    .card{
         flex-basis: 250px;
         height: 400px;
         display: flex;
@@ -71,13 +72,13 @@ footer{
 
     }
 
-    .qrcode{
+    .card__image{
         height: 210px;
         margin-left: 25px;
         
     }
 
-    .text-content{
+    .card__text{
         margin-top: 0;
     }
 
